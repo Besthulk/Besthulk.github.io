@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html class="light">
+
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>如何使用-Hexo-搭建个人博客（一） | AiHulk</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="hexo," />
+  
+
+  <meta name="description" content="如何使用-Hexo-搭建个人博客（一）原文链接：如何使用－Hexo－搭建个人博客
+前言：&amp;#160; &amp;#160; &amp;#160; &amp;#160;半年前都有搭建个人博客这样的想法了，某些原因拖到现在，拖延的毛病是该改改了＝_＝。这次搭建个人博客基本算是顺利，当然少不了好哥们的帮助@RockZhai在这里以示感谢。闲话少说，直奔主题。
+什么是Hexo ?Hexo 是一个简单快速的静态博客框架，可以通过编">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何使用-Hexo-搭建个人博客（一）">
+<meta property="og:url" content="http://yoursite.com/2016/03/22/hexoOne/index.html">
+<meta property="og:site_name" content="AiHulk">
+<meta property="og:description" content="如何使用-Hexo-搭建个人博客（一）原文链接：如何使用－Hexo－搭建个人博客
+前言：&amp;#160; &amp;#160; &amp;#160; &amp;#160;半年前都有搭建个人博客这样的想法了，某些原因拖到现在，拖延的毛病是该改改了＝_＝。这次搭建个人博客基本算是顺利，当然少不了好哥们的帮助@RockZhai在这里以示感谢。闲话少说，直奔主题。
+什么是Hexo ?Hexo 是一个简单快速的静态博客框架，可以通过编">
+<meta property="og:updated_time" content="2016-03-22T11:10:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何使用-Hexo-搭建个人博客（一）">
+<meta name="twitter:description" content="如何使用-Hexo-搭建个人博客（一）原文链接：如何使用－Hexo－搭建个人博客
+前言：&amp;#160; &amp;#160; &amp;#160; &amp;#160;半年前都有搭建个人博客这样的想法了，某些原因拖到现在，拖延的毛病是该改改了＝_＝。这次搭建个人博客基本算是顺利，当然少不了好哥们的帮助@RockZhai在这里以示感谢。闲话少说，直奔主题。
+什么是Hexo ?Hexo 是一个简单快速的静态博客框架，可以通过编">
+
+  
+
+  
+    <link rel="icon" href="/images/head.jpg">
+  
+
+  
+    <link rel="stylesheet" href="/css/forsigner.css">
+  
+
+  <link href="/css/styles.css?v=cc50213e" rel="stylesheet">
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+</head>
+
+<body>
+
+  
+    <a href="#modal-one" class="toolbox-mobile">盒子</a>
+  
+
+  <div class="post-header LEFT">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#如何使用-Hexo-搭建个人博客（一）"><span class="toc-text">如何使用-Hexo-搭建个人博客（一）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言："><span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是Hexo"><span class="toc-text">什么是Hexo ?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建Hexo"><span class="toc-text">搭建Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#前提要求"><span class="toc-text">前提要求</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装Hexo"><span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#如何使用Hexo"><span class="toc-text">如何使用Hexo</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#把博客上传到Github"><span class="toc-text">把博客上传到Github</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-创建自己的github帐号"><span class="toc-text">1.创建自己的github帐号</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-添加SSH-Key"><span class="toc-text">2.添加SSH-Key</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-通过github-pages建立个人站点"><span class="toc-text">3.通过github pages建立个人站点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-配置相应参数"><span class="toc-text">4.配置相应参数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-发布到github上"><span class="toc-text">5.发布到github上</span></a></li></ol></li></ol></li></ol></li></ol>
+  </div>
+
+
+
+<div class="content content-post LEFT">
+   <article id="post-hexoOne" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">如何使用-Hexo-搭建个人博客（一）</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2016.03.22</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>AiHulk</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </span>
+
+
+
+      
+        <span>
+          <i class="icon-comment"></i>
+          <a href="http://Besthulk.github.io/2016/03/22/hexoOne/#disqus_thread"></a>
+        </span>
+      
+
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h2 id="如何使用-Hexo-搭建个人博客（一）"><a href="#如何使用-Hexo-搭建个人博客（一）" class="headerlink" title="如何使用-Hexo-搭建个人博客（一）"></a><strong>如何使用-Hexo-搭建个人博客（一）</strong></h2><p>原文链接：<a href="http://samwei12.gitcafe.io/2015/09/01/如何使用-Hexo-搭建个人博客/" target="_blank" rel="external">如何使用－Hexo－搭建个人博客</a></p>
+<h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a><strong>前言：</strong></h3><p>&#160; &#160; &#160; &#160;半年前都有搭建个人博客这样的想法了，某些原因拖到现在，拖延的毛病是该改改了＝_＝。这次搭建个人博客基本算是顺利，当然少不了好哥们的帮助<a href="http://imzhai.com/" target="_blank" rel="external">@RockZhai</a>在这里以示感谢。闲话少说，直奔主题。</p>
+<h3 id="什么是Hexo"><a href="#什么是Hexo" class="headerlink" title="什么是Hexo ?"></a><strong>什么是Hexo ?</strong></h3><p>Hexo 是一个简单快速的静态博客框架，可以通过编辑 <a href="http://www.markdown.cn/" target="_blank" rel="external">Markdown</a> 文档生成好看的静态博客。</p>
+<h3 id="搭建Hexo"><a href="#搭建Hexo" class="headerlink" title="搭建Hexo"></a><strong>搭建Hexo</strong></h3><h4 id="前提要求"><a href="#前提要求" class="headerlink" title="前提要求"></a><strong>前提要求</strong></h4><p>安装Hexo非常简单，只需要安装好node.js和Git即可。具体安装步骤多种方式，请移步官网，谷歌，百度，这里不做介绍。</p>
+<ul>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a></li>
+<li><a href="https://git-scm.com" target="_blank" rel="external">Git</a></li>
+</ul>
+<h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a><strong>安装Hexo</strong></h4><p>运行终端，执行以下语句。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>到这里个人博客基本上已经安装完毕，剩下的就是相应配置工作了。<br>PS:需要注意的是，这里的 npm 相关命令，最好都使用管理员权限操作，否则可能会报错</p>
+<h4 id="如何使用Hexo"><a href="#如何使用Hexo" class="headerlink" title="如何使用Hexo"></a><strong>如何使用Hexo</strong></h4><p>一旦安装完毕 Hexo，即可通过如下命令在指定文件夹中初始化 Hexo：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 $ hexo init &lt;folder&gt;</span><br><span class="line">2 $ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">3 $ npm install</span><br></pre></td></tr></table></figure></p>
+<p><strong>生成静态页面</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
+<p>简写<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure></p>
+<p><strong>本地启动</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<p>简写<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></p>
+<p>之后即可打开浏览器，地址栏输入localhost:4000 进行预览。<br>PS：4000为端口号，假如没有修改配置文件即为默认4000</p>
+<h3 id="把博客上传到Github"><a href="#把博客上传到Github" class="headerlink" title="把博客上传到Github"></a><strong>把博客上传到Github</strong></h3><h5 id="1-创建自己的github帐号"><a href="#1-创建自己的github帐号" class="headerlink" title="1.创建自己的github帐号"></a>1.创建自己的github帐号</h5><h5 id="2-添加SSH-Key"><a href="#2-添加SSH-Key" class="headerlink" title="2.添加SSH-Key"></a>2.添加SSH-Key</h5><p>&#160; &#160; &#160; &#160;mac用户下载Github Desktop自动添加ssh-key</p>
+<h5 id="3-通过github-pages建立个人站点"><a href="#3-通过github-pages建立个人站点" class="headerlink" title="3.通过github pages建立个人站点"></a>3.通过github pages建立个人站点</h5><h5 id="4-配置相应参数"><a href="#4-配置相应参数" class="headerlink" title="4.配置相应参数"></a>4.配置相应参数</h5><p>&#160; &#160; &#160; &#160;打开安装博客的文件夹，打开_config.yml文件，新增<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: (仓库地址url)</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<h5 id="5-发布到github上"><a href="#5-发布到github上" class="headerlink" title="5.发布到github上"></a>5.发布到github上</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 生成静态文件</span><br><span class="line">hexo g</span><br><span class="line">// 发布</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>即可</p>
+<p>###题外话<br>&#160; &#160; &#160; &#160;第一次写博文，如有不规范之处，欢迎评论指出，我会及时修改。如有不足请多多指点。用hexo搭建博客的博文先更新一篇，后续会加上优化篇，敬请期待。希望大家多多关注我的github帐号，我会陆陆续续把之前的一些项目共享出去，希望大家多多指点评价。谢谢</p>
+
+    
+  </div>
+</article>
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal-one" aria-hidden="true">
+  <a href="#close" class="cover" aria-hidden="true"></a>
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <a href="#close" class="btn-close" aria-hidden="true">关闭</a>
+    </div>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'http://yoursite.com/2016/03/22/hexoOne/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//forsigner.disqus.com/count.js" async></script>
+
+
+
+    
+
+
+
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?1234dfdf', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
